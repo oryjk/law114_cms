@@ -1,0 +1,56 @@
+/* 
+* @Author: Charlie
+* @Date:   2014-11-07 
+* @Last Modified by:   Charlie
+* @Last Modified time: 2015-03-20 15:47:48
+*/
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { padding: 0; margin: 0;}
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; padding: 0; margin: 0; }
+ol,ul,li { list-style: none; }
+caption,th { text-align: left; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; font-size: 100%; }
+body{ position: relative; background:#ffffff url(../images/body_bg.gif) repeat-y center top; font-size: 14px;color: #3f3f3f;font-family: Arial,"宋体";}
+a,a:visited,a:active{ text-decoration: none; color: #3f3f3f; }
+a:hover{color: #194683;}
+.clear { clear:both; }
+.h10{height: 10px;}
+.h20{height: 20px;}
+.main{margin: 0 auto; width: 1000px; clear: both; position: relative; }
+.clearfix:after {content:"\200B"; display:block; height:0; clear:both; }
+.clearfix {*zoom:1;}
+/*Header*/
+#header{width:100%;min-width:1000px;height:152px;background: url(../images/header_bg.png) repeat-x;margin-bottom:10px;}
+.topline{height: 26px;color:#ffffff;line-height: 26px;position: relative;overflow: visible;}
+.topline span{display: inline-block; font-size:12px;}
+.topline .hrefs{ float:right;}
+.topline .hrefs a,.topline .hrefs a:hover{ color:#ffffff; padding:0 10px;}
+.topline img{display: inline-block;float: right;width: 26px;height: 26px;cursor: pointer;}
+.qr{width: 160px;height: 174px;position: absolute;top: 55px;right:15px;z-index: 10;display: none; background:url(../images/point.png) no-repeat; padding-top:16px;}
+.qr iframe{ width:160px; height:174px; margin:0; padding:0;}
+.logoarea{height: 95px;}
+.logoarea .logo{width: 60%;float: left; height:95px; overflow:hidden;}
+.logoarea .tel{width: 40%;float: right;text-align: right; height:95px; overflow:hidden;}
+.nav{height: 59px;overflow: visible;}
+.nav li{width:100px;text-align: center;float: left; height:29px;}
+.nav li a{color: #fff;line-height: 28px;font-size: 14px;display: block; font-family:"微软雅黑"; font-weight:bold; background:url(../images/menuF.jpg) no-repeat right;}
+.nav li:hover{background:url(../images/menuHover.jpg) no-repeat center; color:#ffda91;}
+.nav li.m{position: relative;}
+.nav .sub{position: absolute;top: 29px;left:0;width: 100px;background: #003466;z-index: 1000;display: none;}
+.nav .sub li{width: 100px;height: 28px;line-height: 30px;text-align: center;border-bottom: 1px solid #134e87;border-left: 1px solid #134e87;}
+.nav .sub li a{line-height:28px;font-size: 12px;}
+/*wrapper*/
+
+/*footer*/
+#footer .friendlink{background: url(../images/titleBg.jpg) repeat-x top #f5f5f5;color: #89898a;padding: 20px 0;line-height: 2.5;font-size: 12px;}
+#footer .friendlink a{color: #89898a;}
+#footer .friendlink a:hover{color: #003466;}
+#footer .copyright{background: #003466;;padding: 20px 0;color: #fff;text-align: center;line-height: 2;font-size: 12px;}
+#footer .copyright a{color:#fff;}
+
+
+/*顶部*/
+.share_button{ position:absolute; right:250px; top:25px;}
+#ckepop{ float:right;}
+.voqr{ float:right; cursor:pointer;}

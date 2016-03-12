@@ -1,0 +1,17 @@
+{template "content","header"}
+<section>
+    <div class="region">
+        <h2>{$CATEGORYS[$catid][catname]}</h2>
+        <div class="content clearfix" >
+            {pc:content action="lists" catid="$catid" num="15" order="listorder DESC" page="$page"}
+            <ul>
+            {loop $data $r}
+            <li class="news_list"><a href="{$r[url]}">{str_cut($r['title'],43)}<span>{date('Y-m-d',$r['inputtime'])}</span></a></li>
+            {/loop}
+            </ul>   
+            {/pc}
+            <div class="pages">{$pages}</div>
+        </div>
+    </div>
+</section>
+{template "content","footer"}

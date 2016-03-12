@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="keywords" content="四川民商律师网" />
+    <meta name="description" content="四川民商律师网"/>
+    <title>四川民商律师网</title>
+    <link type="text/css" href="/phpcms/templates/PC114/skin/css/base.css" rel="stylesheet"/>
+    <link type="text/css" href="/phpcms/templates/PC114/skin/css/index.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/phpcms/templates/PC114/skin/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/phpcms/templates/PC114/skin/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="/phpcms/templates/PC114/skin/js/script.js"></script>
+    <script>
+		$(document).ready(function(){ 
+			var divcss = {
+				background: 'none',
+				width:'40px',
+				height:'40px',
+				overflow:'inherit',
+				padding:'0px',
+			};
+		　　$("#ckepop a .jtico").css(divcss); 
+		}); 
+	</script>
+</head>
+<body>
+    <div id="header" class="clearfix">
+        <div class="topline main clearfix">
+            <span>欢迎来到四川民商律师网!</span>
+            <div class="share_button">
+                <!-- JiaThis Button BEGIN -->
+                <div id="ckepop">
+                <a class="jiathis_button_weixin"><img src="/phpcms/templates/PC114/skin/images/top_icon2.png" class="vosh"/></a> 
+                </div> 
+                <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1" charset="utf-8"></script>
+                <!-- JiaThis Button END -->
+                <img src="/phpcms/templates/PC114/skin/images/top_icon1.png" class="voqr"/>
+                <div class="qr"><img src="/phpcms/templates/PC114/skin/images/point.png" /></div>
+            </div>
+        </div>
+        <div class="logoarea main clearfix">
+            <div class="logo"><a href="/"><img src="/phpcms/templates/PC114/skin/images/logo.png" /></a></div>
+            <div class="tel"><img src="/phpcms/templates/PC114/skin/images/tel.png" /></div>
+        </div>
+        <div class="nav main clearfix">
+        <ul>
+        <li><a href="/">首页</a></li>
+                                        <li class="m">
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=19">关于我们</a>
+                                <ul class="sub">
+                                                        <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=69">关于我们</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=70">荣誉资质</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=71">大记事</a></li>
+                                                    </ul>
+                            </li>
+                                            <li >
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=18">团队动态</a>
+                            </li>
+                                            <li >
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=24">热点关注</a>
+                            </li>
+                                            <li class="m">
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=29">房地产</a>
+                                <ul class="sub">
+                                                        <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=30">用地获取</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=31">房地产融资</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=32">物业买卖</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=33">物业租赁</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=34">物业抵押</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=35">风险管理</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=36">判例选登</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=37">合同范本</a></li>
+                                                                                                                                                                                                    </ul>
+                            </li>
+                                            <li class="m">
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=38">建设工程</a>
+                                <ul class="sub">
+                                                        <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=40">项目融资</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=41">招标投标</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=42">工程质量</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=43">工程结算</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=44">风险管理</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=45">争议解决</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=46">判例选登</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=47">合同范本</a></li>
+                                                                                                                                                                                                    </ul>
+                            </li>
+                                            <li class="m">
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=39">合同商事</a>
+                                <ul class="sub">
+                                                        <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=48">法律顾问</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=49">争议解决</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=50">并购重组</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=51">投资融资</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=52">风险管理</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=53">公司治理</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=54">判例选登</a></li>
+                                                                            <li><a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=55">合同范本</a></li>
+                                                                                                                                                                                                    </ul>
+                            </li>
+                                            <li >
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=25">法律论坛</a>
+                            </li>
+                                            <li >
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=8">精选案例</a>
+                            </li>
+                                            <li >
+                <a href="http://wubojuan1.host28.tfidc.com/index.php?m=content&c=index&a=lists&catid=28">合同范本</a>
+                            </li>
+                                                                                                                                                                                                                                                                </ul>
+        </div>
+    </div>
+    <div id="wrapper" class="main clearfix">		<div class="banner">
+			<div class="hd_bg"></div>
+			<div class="hd">
+				<ul>
+                	                    										<li>1</li>
+                                        					<li>2</li>
+                                                            				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+												<li><a href="/"><img src="/uploadfile/2015/0318/20150318042223774.jpg"/></a></li>
+								<li><a href="/"><img src="/uploadfile/2015/0318/20150318042209899.jpg"/></a></li>
+												</ul>
+			</div>
+		</div>
+		<div class="content clearfix">
+			<div class="con_left">
+				<div class="index_left1 clearfix">
+					<div class="left1_slide">
+						 <ul class="bigImg">
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=154" ><img src="files/2015/01/20150105101935170.png" /><h4>蒲杰参加四川省高院2014十大典型案例评选</h4></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=153" ><img src="files/2014/12/20141223181933153.jpg" /><h4>川西监狱寻求与蒲杰律师团队合作</h4></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=152" ><img src="files/2014/12/20141223181751146.jpg" /><h4>蒲杰博士为凉山州律师做法律培训</h4></a></li>
+																		</ul>
+						<div class="smallScroll">
+							<div class="smallImg">
+								<ul>
+																								<li><img src="files/2015/01/20150105101935170.png" /></li>
+																<li><img src="files/2014/12/20141223181933153.jpg" /></li>
+																<li><img src="files/2014/12/20141223181751146.jpg" /></li>
+																								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="left1_fr">
+						<div class="left1_top1">
+																		<a href="/index.php?m=content&c=index&a=show&catid=18&id=154"><h2>蒲杰参加四川省高院2014十大典型案例评选</h2>
+						<p>法院组织进行典型案例评选，作为法律共同体的律师不能袖手旁观，而应参与其中。</p></a>
+																		</div>
+						<div class="left1_title">
+							<div class="left1_title_l"><em>TEAM</em><p>团队动态</p></div>
+							<div class="left1_title_r"><a href="/index.php?m=content&c=index&a=lists&catid=18">更多>></a></div>
+						</div>
+						<div class="left1_list">
+							<ul>
+																												<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=154">蒲杰参加四川省高院2014十大典型...<span>2015/01/05</span></a></li>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=153">川西监狱寻求与蒲杰律师团队合作<span>2014/12/23</span></a></li>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=152">蒲杰博士为凉山州律师做法律培训<span>2014/12/23</span></a></li>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=18&id=151">蒲杰作为民商法律专家参加四川省...<span>2014/12/10</span></a></li>
+																												</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left2 clearfix">
+					<div class="left_title clearfix">
+						<h3>热点关注</h3>
+						<span><a href="/index.php?m=content&c=index&a=lists&catid=24">更多>></a></span>
+					</div>
+					<div class="left2_slide">
+						<div class="bd">
+							<ul>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2884" ><img src="files/2015/01/20150129093522184.jpg" /></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2883" ><img src="files/2015/01/20150127142121146.jpg" /></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2882" ><img src="files/2015/01/20150127142039147.jpg" /></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2881" ><img src="files/2015/01/20150126130858140.jpg" /></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2880" ><img src="files/2015/01/20150123103336152.jpg" /></a></li>
+																					</ul>
+						</div>
+						<div class="hd"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
+					</div>
+					<div class="left_list">
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2886">民间借贷裁判规则知多少？<span>2015/03/20</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2885">重庆仲裁委员会关于明确债务人向融资担...<span>2015/03/20</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2884">最高人民法院关于巡回法庭审理案件若干...<span>2015/01/29</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2883">关于以物抵债调解书是否具有发生物权变...<span>2015/01/27</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2882">最高院司法观点集成：夫妻共同财产认定<span>2015/01/26</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2881">专家解读：国家知识产权战略行动计划(20...<span>2015/01/26</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2880">最高法院：执行期间迟延履行利息计算裁...<span>2015/01/23</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=24&id=2879">物业阻法官送传票被罚10万<span>2015/01/20</span></a></li>
+																		</ul>
+					</div>
+				</div>
+				<div class="index_left3 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>行业动态</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=61">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2955">股权转让（涉矿）效力认定裁判规则<span>2015/01/29</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2954">被执行人配偶名下财产的执行问题...<span>2015/01/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2953">最高院司法观点集成：夫妻共同财...<span>2015/01/26</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2952">吉林高院：关于商事案件适用合同...<span>2015/01/23</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2951">影响合同效力的强制性规定常见类型<span>2015/01/21</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2950">美国联邦最高法院2014年年终报告<span>2015/01/19</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=61&id=2949">民商事审判中证据审查若干规则<span>2015/01/16</span></a></li>
+																					</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>新法速递</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=62">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2963">各地法院裁判意见汇总：民间借贷...<span>2015/03/20</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2962">最高人民法院关于巡回法庭审理案...<span>2015/01/29</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2961">最高人民法院关于适用《中华人民...<span>2015/01/30</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2960">侵害消费者权益行为处罚办法<span>2015/01/15</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2959">最高人民法院关于审理环境民事公...<span>2015/01/07</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2958">关于审理买卖合同纠纷案件若干法...<span>2014/08/12</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=62&id=2957">股权转让所得个人所得税管理办法...<span>2014/12/24</span></a></li>
+																					</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left4 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>精选案例</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=8">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=210">公房使用权能否被强制执行抵债<span>2015/01/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=209">&ldquo;名为买卖、实为借贷&rdquo;案件的审...<span>2015/01/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=208">当事人作出对己不利陈述不构成诉...<span>2015/01/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=207">当事人作出对己不利陈述不构成诉...<span>2015/01/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=206">法院能否不判决停止侵权而判侵权...<span>2015/01/26</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=205">法院可执行被执行人未成年子女名...<span>2015/01/26</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=8&id=204">专利侵权行政诉讼中现有技术抗辩...<span>2015/01/26</span></a></li>
+																					</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>精彩文书</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=63">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+																					<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2771">中国首份法情理融合的判决书<span>2014/09/29</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2770">李生堂与白正祥、横山县韩岔乡庙...<span>2013/10/10</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2769">中信银行长沙晚报大厦支行与李海...<span>2013/11/15</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2768">张启昌与兴达公司、罗志强、怡鑫...<span>2014/01/14</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2767">农行岫岩满族自治县支行与兰翎借...<span>2013/12/27</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2766">友嘉通信与申蓉汽车合同纠纷案<span>2013/12/16</span></a></li>
+														<li><a href="/index.php?m=content&c=index&a=show&catid=63&id=2765">北京建工与北京丰源祥建设工程施...<span>2013/12/02</span></a></li>
+																					</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left5 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>法律论坛</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=25">更多>></a></span>
+						</div>
+						<div class="news_img clearfix">
+																					<div class="news_img_l"><a href="/index.php?m=content&c=index&a=show&catid=25&id=2929"><img src="files/2015/04/20150410164407160.png" /></a></div>
+							<div class="news_img_r">
+								<h4>从两起案件的处理结果看...</h4>
+								<p>&ldquo;一事不再理&rdquo;的判断标准是，两诉当事人相同、诉讼标的相同以及诉讼请求相同或者后诉实...</p>
+							</div>
+																				</div>
+						<div class="left_list">
+							<ul>
+																																																								<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2928">婚后购房父母出资，如何认定<span>2015/01/27</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2927">江平：枉法裁判不可原谅<span>2015/01/23</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2926">如果把判决比作电灯，调解就是蜡烛<span>2015/01/23</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2925">劳动者自动离职的认定与处理<span>2015/01/21</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2924">寻找中国&ldquo;偶像法官&rdquo;归根到底还...<span>2015/01/19</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2923">实际出资占有人与登记人不一致时...<span>2015/01/19</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=25&id=2922">代驾租车合同的性质认定及法律适用<span>2015/01/19</span></a></li>
+																																			</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>合同范本</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=28">更多>></a></span>
+						</div>
+						<div class="news_img clearfix">
+																					<div class="news_img_l"><a href="/index.php?m=content&c=index&a=show&catid=28&id=275"><img src="files/2014/06/20140603165945149.png" /></a></div>
+							<div class="news_img_r">
+								<h4>保密协议范本</h4>
+								<p>如何让员工在职期间保守企业秘密，如何让员工离职后还能保守企业秘密，签订合法、合理的...</p>
+							</div>
+																				</div>
+						<div class="left_list">
+							<ul>
+																																																								<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=274">劳务雇佣合同<span>2014/01/14</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=273">劳动合同<span>2013/12/30</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=272">运输合同<span>2013/11/26</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=271">风险代理合同<span>2013/11/01</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=270">常年法律顾问合同<span>2013/10/14</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=269">房地产项目法律服务合同<span>2013/09/30</span></a></li>
+																																			<li><a href="/index.php?m=content&c=index&a=show&catid=28&id=268">授权委托书<span>2013/09/12</span></a></li>
+																																			</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left6">
+					<div class="left_title clearfix">
+						<h3>合作律师</h3>
+						<span><a href="/index.php?m=content&c=index&a=lists&catid=58">更多>></a></span>
+					</div>
+					<div class="left6_imglist clearfix">
+						<ul>
+																		<li><div class="pic"><a href="/index.php?m=content&c=index&a=show&catid=58&id=142"><img src="/uploadfile/2015/0204/20150204102054910.jpg" /></a></div><a href="/index.php?m=content&c=index&a=show&catid=58&id=142"><p>杜奎生 律师</p><span>达州地区</span></a></li>
+												<li><div class="pic"><a href="/index.php?m=content&c=index&a=show&catid=58&id=141"><img src="/uploadfile/2015/0204/20150204102024568.jpg" /></a></div><a href="/index.php?m=content&c=index&a=show&catid=58&id=141"><p>李明华 律师</p><span>攀枝花地区</span></a></li>
+												<li><div class="pic"><a href="/index.php?m=content&c=index&a=show&catid=58&id=140"><img src="/uploadfile/2015/0204/20150204101953194.jpg" /></a></div><a href="/index.php?m=content&c=index&a=show&catid=58&id=140"><p>吴章义 律师</p><span>资阳地区</span></a></li>
+												<li><div class="pic"><a href="/index.php?m=content&c=index&a=show&catid=58&id=139"><img src="/uploadfile/2015/0204/20150204101922515.jpg" /></a></div><a href="/index.php?m=content&c=index&a=show&catid=58&id=139"><p>侯家齐 律师</p><span>自贡地区</span></a></li>
+																		</ul>
+					</div>
+				</div>
+				<div class="index_left7">
+					<div class="hd clearfix">
+						<ul>
+							<li>律师作用</li>
+							<li>选聘律师</li>
+							<li>律师服务</li>
+							<li>办案流程</li>
+							<li>律师收费</li>
+						</ul>
+					<div class="fixhd"></div>
+					</div>
+					<div class="bd">
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2977">
+						<p>诉讼律师如何与客户沟通？</p>
+						<span>2015-01-23</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2976">
+						<p>律师为什么要为坏人辩护？</p>
+						<span>2015-01-21</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2975">
+						<p>为什么我们不能没有律师？</p>
+						<span>2015-01-19</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2974">
+						<p>江平教授：我心目中的律师是何形象</p>
+						<span>2015-01-14</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2972">
+						<p>律师间合作的痼疾：利益分配</p>
+						<span>2014-12-30</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2971">
+						<p>律师如何留住客户？</p>
+						<span>2014-12-25</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2970">
+						<p>律师支招｜企业家如何在家庭财富...</p>
+						<span>2014-12-02</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2969">
+						<p>打不赢官司的十大原因</p>
+						<span>2014-11-17</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2968">
+						<p>律师与当事人有效沟通的十大铁律</p>
+						<span>2014-11-07</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2967">
+						<p>律师是自由的燃灯者</p>
+						<span>2014-11-05</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2973">
+						<p>律师是自由的燃灯者</p>
+						<span>2014-11-05</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2966">
+						<p>113家央企全面建立总法律顾问制度</p>
+						<span>2014-11-04</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2965">
+						<p>冯象：好律师能不能也是好人</p>
+						<span>2014-10-24</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=64&id=2964">
+						<p>法治进程那些坎之四：“律师”兴衰</p>
+						<span>2014-10-21</span></a></li>
+																		<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=64">查看更多</a></div>
+						</ul>
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2793">
+						<p>律师的九大谎言</p>
+						<span>2013/06/21</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2792">
+						<p>企业如何聘用法律顾问</p>
+						<span>2013/06/19</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2787">
+						<p>签定授权委托书，明确代理事项和...</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2791">
+						<p>签定授权委托书，明确代理事项和...</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2790">
+						<p>专业素质高，办案能力强</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2789">
+						<p>建议您委托律师代理</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=65&id=2788">
+						<p>诚信和责任心同样重要</p>
+						<span>2013/03/13</span></a></li>
+																		<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=65">查看更多</a></div>
+						</ul>
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2979">
+						<p>律师支招丨你应该知道的法律黄金...</p>
+						<span>2014/10/22</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2802">
+						<p>法律服务市场的演变</p>
+						<span>2014/09/16</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2801">
+						<p>律师服务手册</p>
+						<span>2014/03/31</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2800">
+						<p>律师在中小文化企业融资过程中可...</p>
+						<span>2013/08/12</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2799">
+						<p>律师服务范围</p>
+						<span>2013/06/19</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2794">
+						<p>明确代理事项和代理权限</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2798">
+						<p>明确代理事项和代理权限</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2796">
+						<p>讲究职业道德，对案件认真负责</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2795">
+						<p>哪里有法制建设，哪里就会有律师...</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=66&id=2797">
+						<p>专业素质高，办案能力强</p>
+						<span>2013/03/13</span></a></li>
+																		<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=66">查看更多</a></div>
+						</ul>
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2809">
+						<p>法院执行流程</p>
+						<span>2013/08/15</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2808">
+						<p>人民法院办案流程</p>
+						<span>2013/06/20</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2803">
+						<p>民商事审判流程图</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2807">
+						<p>民商事审判流程图</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2804">
+						<p>刑事案件一般流程</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2805">
+						<p> 立案工作流程图</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=67&id=2806">
+						<p>案件流程管理图</p>
+						<span>2013/03/13</span></a></li>
+																		<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=67">查看更多</a></div>
+						</ul>
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2814">
+						<p>四川省律师事务所收费标准</p>
+						<span>2013/08/27</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2813">
+						<p>律师收费方式</p>
+						<span>2013/06/20</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2810">
+						<p>2003年3月24日最高人民法院审判...</p>
+						<span>2013/05/17</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2811">
+						<p>9种律师收费实行政府定价</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2815">
+						<p>修改补充收费管理规定</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2816">
+						<p>6类价格违法行为将被行政处罚</p>
+						<span>2013/03/13</span></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=68&id=2812">
+						<p>律师收费管理办法</p>
+						<span>2013/03/13</span></a></li>
+																		<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=68">查看更多</a></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="con_right">
+				<div class="index_right1">
+					<form name="form1" id="form1" action="index.php">
+						<input type="hidden" name="m" value="search"/>
+						<input type="hidden" name="c" value="index"/>
+						<input type="hidden" name="a" value="init"/>
+						<input type="hidden" name="typeid" value="0" id="typeid"/>
+						<input type="hidden" name="siteid" value="1" id="siteid"/>
+						<input type="text" name="q" id="keywords" class="searchtext" >
+						<input type="submit" id="post-search" class="searchsub" value="搜索">
+					</form>
+				</div>
+				<div class="index_right2">
+					<div class="right_title">首席律师</div>
+															<div class="right2_show">
+                    	<div class="pic">
+                    	<a href="/index.php?m=content&c=index&a=show&catid=57&id=134">
+						<img src="/uploadfile/2015/0204/20150204101713391.jpg" />
+                        </a>
+                        </div>
+                        <div class="txt">
+                        <h4><a href="/index.php?m=content&c=index&a=show&catid=57&id=134">蒲杰 法学博士</a></h4><p>在律师界，只专心办理民商事案件并提供相关咨询服务的...</p>
+                        </div>
+					</div>
+														</div>
+				<div class="index_right3">
+					<div class="right_title">精英律师</div>  
+					<div class="right3_list">
+						<ul>
+																		<li>
+                            <div class="pic">
+                            <a href="/index.php?m=content&c=index&a=show&catid=59&id=146">
+                            <img src="/uploadfile/2015/0204/20150204102254991.jpg" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="/index.php?m=content&c=index&a=show&catid=59&id=146">王华学 律师</a></h4><p>王华学，资深民商律师、注册税务师、证券执业律师，于...</p>
+                            </div>
+                        </li>
+												<li>
+                            <div class="pic">
+                            <a href="/index.php?m=content&c=index&a=show&catid=59&id=144">
+                            <img src="/uploadfile/2015/0204/20150204102205860.jpg" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="/index.php?m=content&c=index&a=show&catid=59&id=144">蒲光南 律师</a></h4><p>之后先后取得证券从业人员资格，企业法律顾问资格。20...</p>
+                            </div>
+                        </li>
+												<li>
+                            <div class="pic">
+                            <a href="/index.php?m=content&c=index&a=show&catid=59&id=143">
+                            <img src="/uploadfile/2015/0204/20150204102127796.jpg" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="/index.php?m=content&c=index&a=show&catid=59&id=143">杨砚 律师</a></h4><p>杨砚律师，毕业于四川师范大学法学院，2007年高分通过...</p>
+                            </div>
+                        </li>
+																		</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=59">更多>></a></div>
+				</div>
+                <div class="weixin">
+                <img src="/uploadfile/2015/0507/20150507050104173.jpg" />
+                </div>
+				<div class="index_right4">
+					<div class="right_title">荣誉资质</div>
+					<div class="right4_list">
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=70&id=2836"><img src="/uploadfile/2015/0323/20150323042956429.jpg" /></a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=70&id=2835"><img src="/uploadfile/2015/0323/20150323042930470.jpg" /></a></li>
+																		</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=70">更多>></a></div>
+				</div>
+				<div class="index_right5">
+					<div class="right_title">大记事</div>
+					<div class="right5_list">
+						<ul>
+																		<li><a href="/index.php?m=content&c=index&a=show&catid=71&id=2823">
+							<h4>省公安厅聘请蒲杰为特邀...</h4>
+							<p>四川省公安厅于2014年4月28日下发通知（川公法[2014]30号），聘请蒲杰等15位专家为省公安厅特邀法律专家...</p>
+						</a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=71&id=2822">
+							<h4>蒲杰入选中国国际经济贸...</h4>
+							<p>  从2014年5月1日起，中国国际经济贸易仲裁委员会（贸仲委）开始施行新一届仲裁员名单，蒲杰律师和全...</p>
+						</a></li>
+												<li><a href="/index.php?m=content&c=index&a=show&catid=71&id=2821">
+							<h4>蒲杰律师第三次被评为&ldquo;...</h4>
+							<p>在2014年3月15日召开的四川省律师协会2013年度表彰会上，蒲杰律师因专业能力突出，热心服务，对四川省律...</p>
+						</a></li>
+																		</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=71">更多>></a></div>
+				</div>
+				<div class="index_right6">
+					<div class="right6_img"><a href="/index.php?m=content&c=index&a=lists&catid=73"><img src="/phpcms/templates/PC114/skin/images/laws.jpg" /></a></div>
+					<div class="right6_search">
+						<form name="form1" id="form1" action="index.php">
+							<input type="hidden" name="m" value="search"/>
+							<input type="hidden" name="c" value="index"/>
+							<input type="hidden" name="a" value="init"/>
+							<input type="hidden" name="typeid" value="53" id="typeid"/>
+							<input type="hidden" name="siteid" value="1" id="siteid"/>
+							<input type="text" name="q" id="keywords" class="right6_text" value="法规搜索" onfocus="this.value=='法规搜索'?this.value='':''" onblur="this.value==''?this.value='法规搜索':''" />
+							<input type="submit" id="post-search" class="right6_sub" value="搜索" />
+						</form>
+					</div>
+				</div>
+				<div class="index_right7">
+					<div class="right7_img"><a href="/index.php?m=content&c=index&a=lists&catid=72"><img src="/phpcms/templates/PC114/skin/images/jion.jpg" /></a></div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div id="footer">
+        <div class="friendlink">
+            <div class="main">
+                                    <p>友情链接：<a href="http://www.cietac.org.cn/" rel="nofollow" target="_blank">中国国际经济贸易仲裁委员会</a>&nbsp;|&nbsp;<a href="http://www.scga.gov.cn/" rel="nofollow" target="_blank">四川省公安厅</a>&nbsp;|&nbsp;<a href="http://www.court.gov.cn/" rel="nofollow" target="_blank">最高人民法院</a>&nbsp;|&nbsp;<a href="http://www.spp.gov.cn/" rel="nofollow" target="_blank">最高人民检察院</a>&nbsp;|&nbsp;<a href="http://www.mps.gov.cn/" rel="nofollow" target="_blank">公安部</a>&nbsp;|&nbsp;<a href="http://www.acla.org.cn/" rel="nofollow" target="_blank">中华全国律师协会网</a>&nbsp;|&nbsp;<a href="http://www.cdac.org.cn/main.action" rel="nofollow" target="_blank">成都仲裁委员会</a>&nbsp;|&nbsp;<a href="http://www.court.gov.cn/zgcpwsw/" rel="nofollow" target="_blank">中国裁判文书网</a>&nbsp;|&nbsp;<a href="http://hk.lexiscn.com/" rel="nofollow" target="_blank">律商网</a>&nbsp;|<a href="http://202.202.80.97/pub/xnzf/" rel="nofollow" target="_blank">西南政法大学</a>&nbsp;|&nbsp;<a href="http://www.fabao365.com/" rel="nofollow" target="_blank">法邦网</a>&nbsp;|&nbsp;<a href="http://www.legalweekly.cn/" rel="nofollow" target="_blank">法治周末</a>&nbsp;|&nbsp;<a href="http://www.mohurd.gov.cn/" rel="nofollow" target="_blank">住房与城乡建设部</a>&nbsp;|&nbsp;<a href="http://www.law-lib.com/" rel="nofollow" target="_blank">法律图书馆</a>&nbsp;|&nbsp;<a href="http://vip.chinalawinfo.com/" rel="nofollow" target="_blank">北大法律信息网</a>&nbsp;|&nbsp;<a href="http://www.legalinfo.gov.cn/" rel="nofollow" target="_blank">中国普法网</a>&nbsp;|&nbsp;<a href="http://www.jingtian.com/" rel="nofollow" target="_blank">竞天公诚律师事务所</a>&nbsp;|&nbsp;<a href="http://www.zwmscp.com/index.html" rel="nofollow" target="_blank">中外民商裁判网</a>&nbsp;|<a href="http://www.scslsxh.com/" rel="nofollow" target="_blank">四川省律师协会</a>&nbsp;|&nbsp;<a href="http://www.moj.gov.cn/" rel="nofollow" target="_blank">司法部</a>&nbsp;|&nbsp;<a href="http://www.sccourt.gov.cn/" rel="nofollow" target="_blank">四川省高级人民法院</a>&nbsp;|&nbsp;<a href="http://cdfy.chinacourt.org/index.shtml" rel="nofollow" target="_blank">成都法院网</a></p>
+                        </div>
+        </div>
+        <div class="copyright">
+            <div class="main">
+                                    <p>Copyright &copy; 2013 四川民商律师网 | 蜀ICP备1300597号 | 版权所有 All rights reserved | 地址：成都市新光华街7号航天科技大厦31层
+<p>全国统一服务电话：4000-028-164 | 传真：028-86282233 | 邮箱：service028164@gmail.com | 民商律师合作交流QQ群：319752006</p>
+</p>
+                                    </div>
+        </div>
+    </div>
+</body>
+</html>

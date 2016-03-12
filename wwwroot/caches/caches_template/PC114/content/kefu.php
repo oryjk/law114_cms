@@ -1,0 +1,1 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><img src="<?php echo $kefu_conf['td_image'];?>" width="140" height="140">

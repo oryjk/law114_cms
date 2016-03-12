@@ -1,0 +1,63 @@
+{template "content","header_c"}
+	<div class="content clearfix">
+		<div class="page_left">
+			<div class="page_title">
+				<h3>{$CATEGORYS[$catid][catname]}</h3>
+				<span><a href="/">首页 </a>{catpos($catid,'>')}</span>
+			</div>
+			<div class="page_con">{$content}</div>
+		</div>
+		<div class="page_right">
+			<div class="page_right1">
+				<form name="form1" id="form1" action="index.php">
+					<input type="hidden" name="m" value="search"/>
+					<input type="hidden" name="c" value="index"/>
+					<input type="hidden" name="a" value="init"/>
+					<input type="hidden" name="typeid" value="0" id="typeid"/>
+					<input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+					<input type="text" name="q" id="keywords" class="searchtext" >
+					<input type="submit" id="post-search" class="searchsub" value="搜索">
+				</form>
+			</div>
+			<div class="page_right2">
+				<div class="right_title">首席律师</div>
+				{pc:content action="lists" catid="57" order="ID DESC" num="1"}
+				{loop $data $dv}
+				<div class="right2_show">
+                            <div class="pic">
+                            <a href="{$dv['url']}">
+                            <img src="{$dv['thumb']}" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="{$dv['url']}">{$dv['title']} {$dv['Area']}</a></h4><p>{str_cut(strip_tags($dv[description]),80)}</p>
+                            </div>
+                </div>
+				{/loop}
+				{/pc}
+			</div>
+			<div class="page_right3">
+				<div class="right_title">精英律师</div>  
+				<div class="right3_list">
+					<ul>
+					{pc:content action="lists" catid="59" order="ID DESC" num="4"}
+					{loop $data $dv}
+					<li>
+                            <div class="pic">
+                            <a href="{$dv['url']}">
+                            <img src="{$dv['thumb']}" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="{$dv['url']}">{$dv['title']} {$dv['Area']}</a></h4><p>{str_cut(strip_tags($dv[description]),80)}</p>
+                            </div>
+                    </li>
+					{/loop}
+					{/pc}
+					</ul>
+				</div>
+				<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=59">[查看更多]</a></div>
+			</div>
+		</div>
+	</div>
+{template "content","footer"}

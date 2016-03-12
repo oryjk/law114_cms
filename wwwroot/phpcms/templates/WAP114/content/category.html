@@ -1,0 +1,24 @@
+{template "content","header"}
+<section>
+	{php $i=0;}
+	{loop subcat($catid) $c}
+	{if $i!=0}
+	<img class="index_show" src="/uploadfile/show0{$i}.jpg" />
+	{/if}
+	<div class="region">
+		<h2>{$c[catname]}</h2>
+		<div class="news_lists">
+	        {pc:content action="lists" catid="$c[catid]" num="8" order="listorder DESC"}
+	        <ul>
+	        {loop $data $r}
+	        <li class="news_list"><a href="{$r[url]}">{str_cut($r['title'],43)}<span>{date('Y-m-d',$r['inputtime'])}</span></a></li>
+	        {/loop}
+	        </ul>   
+	        {/pc}
+        </div>
+        <div class="more"><a href="{$c[url]}">进入{$c[catname]}栏目</a></div>
+	</div>
+	{php $i++;}
+	{/loop}
+</section>
+{template "content","footer"}

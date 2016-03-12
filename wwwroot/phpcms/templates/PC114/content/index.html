@@ -1,0 +1,425 @@
+{template "content","header"}
+		<div class="banner">
+			<div class="hd_bg"></div>
+			<div class="hd">
+				<ul>
+                	{pc:content  action="position" posid="18" order="listorder DESC" thumb="1" num="4" return="scrollImg"}
+                    {php $i=1;}
+					{loop $scrollImg $r}
+					<li>{$i}</li>
+                    {php $i++}
+                    {/loop}
+                    {/pc}
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+				{pc:content  action="position" posid="18" order="listorder DESC" thumb="1" num="4" return="scrollImg"}
+				{loop $scrollImg $r}
+				<li><a href="{$r['url']}"><img src="{$r['thumb']}"/></a></li>
+				{/loop}
+				{/pc}
+				</ul>
+			</div>
+		</div>
+		<div class="content clearfix">
+			<div class="con_left">
+				<div class="index_left1 clearfix">
+					<div class="left1_slide">
+						 <ul class="bigImg">
+						{pc:content action="lists" catid="18" order="listorder DESC" num="3"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}" ><img src="{$dv['thumb']}" /><h4>{str_cut($dv['title'],60)}</h4></a></li>
+						{/loop}
+						{/pc}
+						</ul>
+						<div class="smallScroll">
+							<div class="smallImg">
+								<ul>
+								{pc:content action="lists" catid="18" order="listorder DESC" num="3"}
+								{loop $data $dv}
+								<li><img src="{$dv['thumb']}" /></li>
+								{/loop}
+								{/pc}
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="left1_fr">
+						<div class="left1_top1">
+						{pc:content action="lists" catid="18" order="listorder DESC" num="1"}
+						{loop $data $dv}
+						<a href="{$dv['url']}"><h2>{str_cut($dv['title'],60)}</h2>
+						<p>{str_cut(strip_tags($dv[description]),200)}</p></a>
+						{/loop}
+						{/pc}
+						</div>
+						<div class="left1_title">
+							<div class="left1_title_l"><em>TEAM</em><p>团队动态</p></div>
+							<div class="left1_title_r"><a href="/index.php?m=content&c=index&a=lists&catid=18">更多>></a></div>
+						</div>
+						<div class="left1_list">
+							<ul>
+							{pc:content action="lists" catid="18" order="listorder DESC" num="4"}
+							{php $i=1;}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{php $i++;}
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left2 clearfix">
+					<div class="left_title clearfix">
+						<h3>热点关注</h3>
+						<span><a href="/index.php?m=content&c=index&a=lists&catid=24">更多>></a></span>
+					</div>
+					<div class="left2_slide">
+						<div class="bd">
+							<ul>
+							{pc:content action="lists" catid="24" thumb="1" order="ID DESC" num="5"}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}" ><img src="{$dv['thumb']}" /></a></li>
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+						<div class="hd"><ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li></ul></div>
+					</div>
+					<div class="left_list">
+						<ul>
+						{pc:content action="lists" catid="24" order="ID DESC" num="8"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">{str_cut($dv['title'],60)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						</ul>
+					</div>
+				</div>
+				<div class="index_left3 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>行业动态</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=61">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="61" order="ID DESC" num="7"}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>新法速递</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=62">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="62" order="ID DESC" num="7"}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+				</div>
+                <div class="swf">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="740" height="102">
+                    <param name="movie" value="{SKIN_PATH}images/home1.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="transparent" />
+                    <embed src="{SKIN_PATH}images/home1.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="740" height="102"></embed>
+                    </object>
+                </div>
+				<div class="index_left4 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>精选案例</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=8">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="8" order="ID DESC" num="7"}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>精彩文书</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=63">更多>></a></span>
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="63" order="ID DESC" num="7"}
+							{loop $data $dv}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+				</div>
+                <div class="swf">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="740" height="102">
+                    <param name="movie" value="{SKIN_PATH}images/home2.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="transparent" />
+                    <embed src="{SKIN_PATH}images/home2.swf" quality="high" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="740" height="102"></embed>
+                    </object>
+                </div>
+				<div class="index_left5 clearfix">
+					<div class="half_left">
+						<div class="left_title clearfix">
+							<h3>法律论坛</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=25">更多>></a></span>
+						</div>
+						<div class="news_img clearfix">
+							{pc:content action="lists" catid="25" order="ID DESC" num="1" thumb="1"}
+							{loop $data $dv}
+							<div class="news_img_l"><a href="{$dv['url']}"><img src="{$dv['thumb']}" /></a></div>
+							<div class="news_img_r">
+								<h4>{str_cut($dv['title'],40)}</h4>
+								<p>{str_cut(strip_tags($dv[description]),130)}</p>
+							</div>
+							{/loop}
+							{/pc}
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="25" order="ID DESC" num="8"}
+							{php $i=1}
+							{loop $data $dv}
+							{if $i>1}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/if}
+							{php $i++}
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+					<div class="half_right">
+						<div class="left_title clearfix">
+							<h3>合同范本</h3>
+							<span><a href="/index.php?m=content&c=index&a=lists&catid=28">更多>></a></span>
+						</div>
+						<div class="news_img clearfix">
+							{pc:content action="lists" catid="28" order="ID DESC" num="1" thumb="1"}
+							{loop $data $dv}
+							<div class="news_img_l"><a href="{$dv['url']}"><img src="{$dv['thumb']}" /></a></div>
+							<div class="news_img_r">
+								<h4>{str_cut($dv['title'],40)}</h4>
+								<p>{str_cut(strip_tags($dv[description]),130)}</p>
+							</div>
+							{/loop}
+							{/pc}
+						</div>
+						<div class="left_list">
+							<ul>
+							{pc:content action="lists" catid="28" order="ID DESC" num="8"}
+							{php $i=1}
+							{loop $data $dv}
+							{if $i>1}
+							<li><a href="{$dv['url']}">{str_cut($dv['title'],50)}<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+							{/if}
+							{php $i++}
+							{/loop}
+							{/pc}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="index_left6">
+					<div class="left_title clearfix">
+						<h3>合作律师</h3>
+						<span><a href="/index.php?m=content&c=index&a=lists&catid=58">更多>></a></span>
+					</div>
+					<div class="left6_imglist clearfix">
+						<ul>
+						{pc:content action="lists" catid="58" order="ID DESC" num="4"}
+						{loop $data $dv}
+						<li><div class="pic"><a href="{$dv['url']}"><img src="{$dv['thumb']}" /></a></div><a href="{$dv['url']}"><p>{str_cut($dv['title'],50)}</p><span>{$dv['Area']}</span></a></li>
+						{/loop}
+						{/pc}
+						</ul>
+					</div>
+				</div>
+				<div class="index_left7">
+					<div class="hd clearfix">
+						<ul>
+							<li>律师作用</li>
+							<li>选聘律师</li>
+							<li>律师服务</li>
+							<li>办案流程</li>
+							<li>律师收费</li>
+						</ul>
+					<div class="fixhd"></div>
+					</div>
+					<div class="bd">
+						<ul>
+						{pc:content action="lists" catid="64" order="listorder DESC,inputtime desc" num="12"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+						<p>{str_cut($dv['title'],50)}</p>
+						<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=64">查看更多</a></div>
+						</ul>
+						<ul>
+						{pc:content action="lists" catid="65" order="listorder DESC,inputtime desc" num="12"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+						<p>{str_cut($dv['title'],50)}</p>
+						<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=65">查看更多</a></div>
+						</ul>
+						<ul>
+						{pc:content action="lists" catid="66" order="listorder DESC,inputtime desc" num="12"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+						<p>{str_cut($dv['title'],50)}</p>
+						<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=66">查看更多</a></div>
+						</ul>
+						<ul>
+						{pc:content action="lists" catid="67" order="listorder DESC,inputtime desc" num="12"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+						<p>{str_cut($dv['title'],50)}</p>
+						<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=67">查看更多</a></div>
+						</ul>
+						<ul>
+						{pc:content action="lists" catid="68" order="listorder DESC,inputtime desc" num="12"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+						<p>{str_cut($dv['title'],50)}</p>
+						<span>{date('Y/m/d',$dv['inputtime'])}</span></a></li>
+						{/loop}
+						{/pc}
+						<div class="left7_more"><a href="/index.php?m=content&c=index&a=lists&catid=68">查看更多</a></div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="con_right">
+				<div class="index_right1">
+					<form name="form1" id="form1" action="index.php">
+						<input type="hidden" name="m" value="search"/>
+						<input type="hidden" name="c" value="index"/>
+						<input type="hidden" name="a" value="init"/>
+						<input type="hidden" name="typeid" value="0" id="typeid"/>
+						<input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+						<input type="text" name="q" id="keywords" class="searchtext" >
+						<input type="submit" id="post-search" class="searchsub" value="搜索">
+					</form>
+				</div>
+				<div class="index_right2">
+					<div class="right_title">首席律师</div>
+					{pc:content action="lists" catid="57" order="ID DESC" num="1"}
+					{loop $data $dv}
+					<div class="right2_show">
+                    	<div class="pic">
+                    	<a href="{$dv['url']}">
+						<img src="{$dv['thumb']}" />
+                        </a>
+                        </div>
+                        <div class="txt">
+                        <h4><a href="{$dv['url']}">{$dv['title']} {$dv['Area']}</a></h4><p>{str_cut(strip_tags($dv[description]),80)}</p>
+                        </div>
+					</div>
+					{/loop}
+					{/pc}
+				</div>
+				<div class="index_right3">
+					<div class="right_title">精英律师</div>  
+					<div class="right3_list">
+						<ul>
+						{pc:content action="lists" catid="59" order="ID DESC" num="4"}
+						{loop $data $dv}
+						<li>
+                            <div class="pic">
+                            <a href="{$dv['url']}">
+                            <img src="{$dv['thumb']}" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="{$dv['url']}">{$dv['title']} {$dv['Area']}</a></h4><p>{str_cut(strip_tags($dv[description]),80)}</p>
+                            </div>
+                        </li>
+						{/loop}
+						{/pc}
+						</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=59">更多>></a></div>
+				</div>
+                <div class="weixin">
+                <img src="{$CATEGORYS[97][image]}" />
+                </div>
+				<div class="index_right4">
+					<div class="right_title">荣誉资质</div>
+					<div class="right4_list">
+						<ul>
+						{pc:content action="lists" catid="70" order="ID DESC" num="3"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}"><img src="{$dv['thumb']}" /></a></li>
+						{/loop}
+						{/pc}
+						</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=70">更多>></a></div>
+				</div>
+				<div class="index_right5">
+					<div class="right_title">大记事</div>
+					<div class="right5_list">
+						<ul>
+						{pc:content action="lists" catid="71" order="ID DESC" num="3"}
+						{loop $data $dv}
+						<li><a href="{$dv['url']}">
+							<h4>{str_cut($dv['title'],40)}</h4>
+							<p>{str_cut(strip_tags($dv[description]),150)}</p>
+						</a></li>
+						{/loop}
+						{/pc}
+						</ul>
+					</div>
+					<div class="right_more"><a href="/index.php?m=content&c=index&a=lists&catid=71">更多>></a></div>
+				</div>
+				<div class="index_right6">
+					<div class="right6_img"><a href="/index.php?m=content&c=index&a=lists&catid=73"><img src="{SKIN_PATH}images/laws.jpg" /></a></div>
+					<div class="right6_search">
+						<form name="form1" id="form1" action="index.php">
+							<input type="hidden" name="m" value="content"/>
+							<input type="hidden" name="c" value="index"/>
+							<input type="hidden" name="a" value="lists"/>
+							<input type="hidden" name="catid" value="73" id="catid"/>
+							<input type="hidden" name="siteid" value="1" id="siteid"/>
+							<input type="text" name="q" id="keywords" class="right6_text" value="法规搜索" onfocus="this.value=='法规搜索'?this.value='':''" onblur="this.value==''?this.value='法规搜索':''" />
+							<input type="submit" id="post-search" class="right6_sub" value="搜索" />
+						</form>
+					</div>
+				</div>
+				<div class="index_right7">
+					<div class="right7_img"><a href="/index.php?m=content&c=index&a=lists&catid=72"><img src="{SKIN_PATH}images/jion.jpg" /></a></div>
+				</div>
+			</div>
+		</div>
+{template "content","footer"}

@@ -1,0 +1,150 @@
+{template "content","header"}
+<section>
+    <div class="region">
+        <h2>团队动态</h2>
+        <div class="img_lists">
+            <ul>
+            {pc:content action="lists" catid="18" order="listorder DESC" num="4"}
+            {loop $data $dv}
+            <li class="img_list clearfix"><a href="{$dv['url']}">
+                <img src="{$dv['thumb']}" onload="autoimg()" class="imgauto"/>
+                <p>{str_cut($dv['title'],43)}</p>
+                <span>{str_cut(strip_tags($dv[description]),90)}</span>
+            </a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=18">进入团队动态栏目</a></div>
+    </div>
+    <div class="region">
+        <h2>热点关注</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="24" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=24">进入热点关注栏目</a></div>
+    </div>
+    <div class="region" id="picScroll">
+        <h2>律师团队</h2>
+        <div class="lawer_imgs bd">
+            <ul>
+            {pc:content action="lists" catid="56" thumb="1" num="16" order="listorder DESC"}
+            {php $i=1;}
+            {loop $data $dv}
+            {if $i<=8}
+            <li class="lawer_img"><a href="{$dv['url']}"><img src="{$dv['thumb']}" onload="autoimg()" class="imgauto2"/><p>{$dv['title']}</p></a></li>
+            {elseif $i==9}
+            </ul>
+            <ul>
+            <li class="lawer_img"><a href="{$dv['url']}"><img src="{$dv['thumb']}" onload="autoimg()" class="imgauto2"/><p>{$dv['title']}</p></a></li>
+            {elseif $i>9}
+            <li class="lawer_img"><a href="{$dv['url']}"><img src="{$dv['thumb']}" onload="autoimg()" class="imgauto2"/><p>{$dv['title']}</p></a></li>
+            {/if}
+            {php $i++;}
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="hd"><ul></ul></div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=56">进入律师团队栏目</a></div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#picScroll",
+            titCell:".hd ul",
+            autoPage:"true", 
+            pnLoop:"false"
+        });
+    </script>
+    <img class="index_show" src="{SKIN_PATH}images/show01.jpg" />
+    <div class="region">
+        <h2>法律论坛</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="25" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=25">进入法律论坛栏目</a></div>
+    </div>
+    <img class="index_show" src="{SKIN_PATH}images/show02.jpg" />
+    <div class="region">
+        <h2>精选案例</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="8" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=8">进入精选案例栏目</a></div>
+    </div>
+    <img class="index_show" src="{SKIN_PATH}images/show03.jpg" />
+    <div class="region">
+        <h2>合同范本</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="28" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=28">进入合同范本栏目</a></div>
+    </div>
+    <img class="index_show" src="{SKIN_PATH}images/show04.jpg" />
+    <div class="region">
+        <h2>房地产</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="29" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=29">进入房地产栏目</a></div>
+    </div>
+    <img class="index_show" src="{SKIN_PATH}images/show05.jpg" />
+    <div class="region">
+        <h2>建设工程</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="38" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=38">进入建设工程栏目</a></div>
+    </div>
+    <img class="index_show" src="{SKIN_PATH}images/show06.jpg" />
+    <div class="region">
+        <h2>合同商事</h2>
+        <div class="news_lists">
+            <ul>
+            {pc:content action="lists" catid="39" order="listorder DESC" num="8"}
+            {loop $data $dv}
+            <li class="news_list"><a href="{$dv['url']}">{str_cut($dv['title'],43)}<span>{date('Y-m-d',$dv['inputtime'])}</span></a></li>
+            {/loop}
+            {/pc}
+            </ul>
+        </div>
+        <div class="more"><a href="/index.php?m=content&c=index&a=lists&catid=39">进入合同商事栏目</a></div>
+    </div>
+</section>
+{template "content","footer"}

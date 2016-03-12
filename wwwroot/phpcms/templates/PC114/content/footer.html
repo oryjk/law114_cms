@@ -1,0 +1,22 @@
+    </div>
+    <div id="footer">
+        <div class="friendlink">
+            <div class="main">
+            {pc:content  action="getRecord"  name="news as news2 " join=" left join news_data as news1 on news1.id=news2.id" fields="content" where=" title eq '友情链接'" num="1"}
+            {loop $data $r}
+            <p>{$r[content]}</p>
+            {/loop}
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="main">
+            {pc:content  action="getRecord"  name="news as news2 " join=" left join news_data as news1 on news1.id=news2.id" fields="content" where=" title eq 'PC版权信息'" num="1"}
+            {loop $data $r}
+            <p>{$r[content]}</p>
+            {/loop}
+            {/pc}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="{$SEO['keyword']}" />
+    <meta name="description" content="{$SEO['description']}"/>
+    <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+    <script type="text/javascript" src="{SKIN_PATH}js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="{SKIN_PATH}js/TouchSlide.1.1.js"></script>
+    <script type="text/javascript" src="{SKIN_PATH}js/common.js"></script>
+    <script type="text/javascript" src="{SKIN_PATH}js/nativeShare.js"></script>
+    <script type="text/javascript" src="{SKIN_PATH}js/jquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="{SKIN_PATH}css/style.css" />
+    <link type="text/css" rel="stylesheet" href="{SKIN_PATH}css/nativeShare.css" />
+    <script>
+		function show(){
+			var display=$(".share").css('display');
+			if(display=='none'){
+				$(".share").show(500);
+			}
+			else{
+				$(".share").hide(500);
+			}
+		}
+	</script>
+</head>
+
+<body onResize="autoimg()">
+<header id="header">
+    <div class="logoarea clearfix">
+        <div class="logo"><a href="/"><img src="{SKIN_PATH}images/logo.png"/></a></div>
+        <div class="toptel"><a href="tel:400028164"><img src="{SKIN_PATH}images/TopTel.png"/></a></div>
+        <div class="topQR"><img src="{SKIN_PATH}images/TopQR.png"/></div>
+        <div class="topshare" id="topshare" onClick="show()"><img src="{SKIN_PATH}images/TopShare.png"/></div>
+    </div>
+        <div class="share" id="share">
+            <div id="nativeShare"></div>
+            <script>
+			    var web_title='{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}';
+				var web_desc='{$SEO['description']}';
+				var web_url=window.location.href;
+                var config = {
+                    url:web_url,
+                    title:web_title,
+                    desc:web_desc,
+                    img:'http://localhost:8051/phpcms/templates/WAP114/skin/images/logo.png',
+                    img_title:web_title,
+                    from:web_title,
+                };
+                var share_obj = new nativeShare('nativeShare',config);
+            </script>
+        </div>
+    <div class="nav clearfix">
+        <ul>
+        <li><a href="/">网站首页</a></li>
+        {pc:content action="category" catid="0" order="listorder"}
+        {loop $data $r}
+        {if $r["isindexguide"]==1}
+        <li><a href="{$r['url']}">{$r['catname']}</a><li>
+        {/if}
+        {/loop}
+        {/pc}
+        </ul>
+    </div>
+    <div id="slidebox" class="slidebox">
+        <div class="bd">
+            <ul>
+            {pc:content  action="position" posid="1" order="listorder DESC" thumb="1" num="5" return="scrollImg"}
+            {loop $scrollImg $r}
+            <li><a href="{$r['url']}"><img src="{$r['thumb']}"/></a></li>
+            {/loop}            
+            {/pc}            
+            </ul>
+        </div>
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <script>
+        TouchSlide({ 
+            slideCell:"#slidebox",
+            titCell:".hd ul",
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true,
+            autoPlay:true
+        });
+    </script>
+</header>

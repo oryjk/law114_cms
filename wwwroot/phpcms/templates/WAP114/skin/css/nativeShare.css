@@ -1,0 +1,78 @@
+Skip to content
+Sign up Sign in
+This repository  
+Explore
+Features
+Enterprise
+Blog
+ Watch 3  Star 12  Fork 9 JefferyWang/nativeShare.js
+ branch: master  nativeShare.js/nativeShare.css
+@JefferyWangJefferyWang 10 days ago 添加用法
+1 contributor
+RawBlameHistory     63 lines (52 sloc)  1.128 kB
+/**
+ * Created by Jeffery Wang.
+ * Create Time: 2015-06-16 19:52
+ * Author Link: http://blog.wangjunfeng.com
+ */
+
+#nativeShare {
+    font-size: 13px;
+	background:#ffffff;
+}
+.share{ display:none;}
+#nativeShare .label {
+    font-size: 20px;
+}
+
+#nativeShare .list {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#nativeShare .list span {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#nativeShare .list span i {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#nativeShare .weibo i {
+    background-image: url('../images/weibo.png');
+    background-size: cover;
+}
+
+#nativeShare .weixin i {
+    background-image: url('../images/weixin_friend.png');
+    background-size: cover;
+}
+
+#nativeShare .weixin_timeline i {
+    background-image: url('../images/weixin.png');
+    background-size: cover;
+}
+
+#nativeShare .qq i {
+    background-image: url('../images/qq.png');
+    background-size: cover;
+}
+
+#nativeShare .qzone i {
+    background-image: url('../images/qqzone.png');
+    background-size: cover;
+}
+
+#nativeShare .more i {
+    background-image: url('../images/more.png');
+    background-size: cover;
+}
+Status API Training Shop Blog About Help
+© 2015 GitHub, Inc. Terms Privacy Security Contact

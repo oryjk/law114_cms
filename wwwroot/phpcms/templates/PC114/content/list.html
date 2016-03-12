@@ -1,0 +1,113 @@
+{template "content","header_c"}
+	<div class="content clearfix">
+		<div class="list_left">
+			<div class="list_title">
+				<h3>{$CATEGORYS[$catid][catname]}</h3>
+				<span><a href="/">首页 </a>{catpos($catid,'>')}</span>
+			</div>
+			<div class="all_list">
+			{pc:content action="lists" catid="$catid" num="9" order="listorder DESC,inputtime desc" page="$page"}
+			{loop $data $r}
+            <div class="item clearfix">
+            	<div class="pic">
+            	<a href="{$r[url]}">
+                {if $r[thumb]}
+                <img src="{$r[thumb]}" />
+                {else}
+                <img src="/uploadfile/noimage.jpg" />
+                {/if}
+                </a>
+                </div>
+                <a href="{$r[url]}"><h3>{str_cut($r['title'],80)}</h3></a>
+                <p>{str_cut(strip_tags($r[description]),300)}</p>
+                <i>发布日期：{date('Y-m-d',$r['inputtime'])}</i><em><a href="{$r[url]}">阅读全文</a></em>
+                <div class="clear"></div>
+            </div>
+			{/loop}
+			{/pc}
+            <div class="pages" align="center">{$pages}</div>
+			</div>
+		</div>
+		<div class="show_right">
+			<div class="show_right1">
+				<form name="form1" id="form1" action="index.php">
+					<input type="hidden" name="m" value="search"/>
+					<input type="hidden" name="c" value="index"/>
+					<input type="hidden" name="a" value="init"/>
+					<input type="hidden" name="typeid" value="0" id="typeid"/>
+					<input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+					<input type="text" name="q" id="keywords" class="searchtext" >
+					<input type="submit" id="post-search" class="searchsub" value="搜索">
+				</form>
+			</div>
+			<div class="show_right2">
+				<div class="right_title">首席律师</div>
+				{pc:content action="lists" catid="57" order="ID DESC" num="1"}
+				{loop $data $dv}
+				<div class="right2_show">
+                            <div class="pic">
+                            <a href="{$dv['url']}">
+                            <img src="{$dv['thumb']}" />
+                            </a>
+                            </div>
+                            <div class="txt">
+                            <h4><a href="{$dv['url']}">{$dv['title']} {$dv['Area']}</a></h4><p>{str_cut(strip_tags($dv[description]),80)}</p>
+                            </div>
+                </div>
+				{/loop}
+				{/pc}
+			</div>
+            <div class="weixin">
+            <img src="{$CATEGORYS[97][image]}" />
+            </div>
+			<div class="show_right3">
+				<div class="right_title"><a href="/index.php?m=content&c=index&a=lists&catid=18">团队动态</a></div>
+				<div class="right3_list">
+					<ul>
+					{pc:content action="lists" catid="18" order="listorder DESC,inputtime desc" num="7"}
+					{loop $data $dv}
+					<li><a href="{$dv['url']}">{str_cut($dv['title'],47)}</a></li>
+					{/loop}
+					{/pc}
+					</ul>
+				</div>
+			</div>
+			<div class="show_right3">
+				<div class="right_title"><a href="/index.php?m=content&c=index&a=lists&catid=25">法律论坛</a></div>
+				<div class="right3_list">
+					<ul>
+					{pc:content action="lists" catid="25" order="listorder DESC,inputtime desc" num="7"}
+					{loop $data $dv}
+					<li><a href="{$dv['url']}">{str_cut($dv['title'],47)}</a></li>
+					{/loop}
+					{/pc}
+					</ul>
+				</div>
+			</div>
+			<div class="show_right3">
+				<div class="right_title"><a href="/index.php?m=content&c=index&a=lists&catid=8">精选案例</a></div>
+				<div class="right3_list">
+					<ul>
+					{pc:content action="lists" catid="8" order="listorder DESC,inputtime desc" num="7"}
+					{loop $data $dv}
+					<li><a href="{$dv['url']}">{str_cut($dv['title'],47)}</a></li>
+					{/loop}
+					{/pc}
+					</ul>
+				</div>
+			</div>
+			<div class="show_right3">
+				<div class="right_title"><a href="/index.php?m=content&c=index&a=lists&catid=28">合同范本</a></div>
+				<div class="right3_list">
+					<ul>
+					{pc:content action="lists" catid="28" order="listorder DESC,inputtime desc" num="7"}
+					{loop $data $dv}
+					<li><a href="{$dv['url']}">{str_cut($dv['title'],47)}</a></li>
+					{/loop}
+					{/pc}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+{template "content","footer"}

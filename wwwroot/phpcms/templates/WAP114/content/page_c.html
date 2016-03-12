@@ -1,0 +1,7 @@
+{pc:content action="category" catid="$catid" num="1" order="listorder ASC" return="data"}
+{loop $data $r}
+<script language="javascript" type="text/javascript">
+window.location.href="index.php?m=content&c=index&a=lists&catid={$r['catid']}";
+</script>
+{/loop}
+{/pc}

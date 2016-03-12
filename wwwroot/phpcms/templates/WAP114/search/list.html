@@ -1,0 +1,65 @@
+{template 'content', 'header_mini'}
+	<link type="text/css" rel="stylesheet" href="{SKIN_PATH}css/search.css" />
+	<script language="javascript" src="{SKIN_PATH}js/search_common.js"></script>
+    <div id="content"  data-ajax="false" data-role='none'>
+    	<div class="sr_main">
+
+            <div class="wrap sr_lists">
+            	<div class="l">
+                	<div>
+                        <ul>
+                        <li>网页结果</li>
+						<li><a href="?m=search&c=index&a=init&typeid=1&q={urlencode($search_q)}&siteid={$siteid}&time={$time}" {if 1==$typeid} class="ac"{/if}>文章</a></li>
+						<li><a href="?m=search&c=index&a=init&typeid=3&q={urlencode($search_q)}&siteid={$siteid}&time={$time}" {if 3==$typeid} class="ac"{/if}>图片</a></li>
+                         </ul>
+                    </div>
+                    <!--<div>
+                        <ul>
+                            <li>时间搜索</li>
+                            <li><a href="?m=search&c=index&a=init&typeid={$typeid}&q={urlencode($search_q)}&siteid={$siteid}&time=all" {if $time=='all' || empty($time)}class="ac"{/if}>不限</a></li>
+                            <li><a href="?m=search&c=index&a=init&typeid={$typeid}&q={urlencode($search_q)}&siteid={$siteid}&time=day" {if $time=='day'}class="ac"{/if}>一天内</a></li>
+                            <li><a href="?m=search&c=index&a=init&typeid={$typeid}&q={urlencode($search_q)}&siteid={$siteid}&time=week" {if $time=='week'}class="ac"{/if}>一周内</a></li>
+                            <li><a href="?m=search&c=index&a=init&typeid={$typeid}&q={urlencode($search_q)}&siteid={$siteid}&time=month" {if $time=='month'}class="ac"{/if}>一月内</a></li>
+                            <li><a href="?m=search&c=index&a=init&typeid={$typeid}&q={urlencode($search_q)}&siteid={$siteid}&time=year" {if $time=='year'}class="ac"{/if}>一年内</a></li>
+                        </ul>
+                    </div>-->
+                    <!--<div class="bgno">
+                    	<span>搜索历史</span>
+                        <ul id='history_ul'>
+                        </ul>
+                    </div>-->
+                    <div class="clear"></div>
+                </div>
+                <div class="c wrap">
+                	<ul class="wrap">
+						{loop $data $i $r}
+						<li class="wrap">
+							<div>
+								{if $r['thumb']}<a href="{$r[url]}"><img src="{$r[thumb]}" width="60" height="60" /></a>{/if}
+								<h5><a href="{$r[url]}">{$r[title]}</a>{if $r['posids']}<img src="{IMG_PATH}icon/small_elite.gif">{/if}</h5>
+								<p>{$r[description]}</p>
+							</div>
+							<!--<div class="adds">发布时间：{format::date($r[inputtime], 1)}</div>-->
+						</li>
+						{/loop}
+						{if empty($data)}<li>未找到结果</li>{/if}
+                    </ul>
+                    <div id="pages" class="text-c mg_t20" align="center">{$pages}</div>
+					{if $setting['relationenble']}
+					<div class="wrap sgch"><strong>相关搜索：</strong>
+					{loop $relation $k $v}
+					<a href="?m=search&c=index&a=init&typeid={$typeid}&siteid={$siteid}&q={$v['keyword']}">{$v['keyword']}</a> 
+					{/loop}
+					</div>
+					{/if}
+                </div>
+            </div>
+      </div>
+</div>      
+<script type="text/javascript" src="{JS_PATH}mobile/cookie.js"></script>
+<script type="text/javascript" src="{JS_PATH}mobile/search_history.js"></script>
+{if $setting['suggestenable']}
+<script type="text/javascript" src="{JS_PATH}mobile/jquery.suggest.js"></script>
+<script type="text/javascript" src="{JS_PATH}mobile/search_suggest.js"></script>
+{/if}
+{template 'content', 'footer_mini'}

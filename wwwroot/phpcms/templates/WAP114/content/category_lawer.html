@@ -1,0 +1,25 @@
+{template "content","header"}
+<section>
+    <div class="region">
+        <h2>{$CATEGORYS[$catid][catname]}</h2>
+        <div class="content clearfix" >
+            {pc:content action="lists" catid="$catid" num="10" order="listorder ASC" page="$page"}
+                <ul>
+                {loop $data $r}
+                <li class="img_list clearfix"><a href="{$r['url']}">
+                {if $r['thumb']}
+                    <img src="{$r['thumb']}" onload="autoimg()" class="imgauto2"/>
+                {else}
+                    <img src="/uploadfile/nopic.png" onload="autoimg()" class="imgauto2"/>
+                {/if}
+                    <p>{str_cut($r['title'],43)}</p>
+                    <span>{str_cut(strip_tags($r[description]),130)}</span>
+                </a></li>
+                {/loop}
+                </ul>   
+            {/pc}
+            <div class="pages">{$pages}</div>
+        </div>
+    </div>
+</section>
+{template "content","footer"}

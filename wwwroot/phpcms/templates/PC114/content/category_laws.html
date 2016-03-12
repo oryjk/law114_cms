@@ -1,0 +1,65 @@
+{template "content","header_c"}
+    <div class="content clearfix">
+        <div class="list_left">
+            <div class="list_title">
+                <h3>{$CATEGORYS[$catid][catname]}</h3>
+                <span><a href="/">首页 </a>{catpos($catid,'>')}</span>
+            </div>
+            <div class="all_list clearfix">
+            <div class="item_laws_hd clearfix"><h3>法规名称</h3><p>文号</p><span>颁布时间</span></div>
+            		{php $key=$_GET[q]}
+                    {if $key}
+                    {pc:content action="lists" catid="$catid" where="title like '%$key%'" order="listorder ASC,inputtime desc,id desc" num="15" page="$page"}
+                    {else}
+                    {pc:content action="lists" catid="$catid" order="listorder ASC,inputtime desc,id desc" num="15" page="$page"}
+                    {/if}
+            {loop $data $r}
+            <div class="item_laws clearfix"><a href="{$r[url]}">
+                <h3>{str_cut($r['title'],70)}</h3>
+                <p>{str_cut($r['lawno'],40)}</p>
+                <span>{date('Y-m-d',$r['inputtime'])}</span>
+            </a></div>
+            {/loop}
+            {/pc}
+            <div class="pages lawspage">{$pages}</div>
+            </div>
+        </div>
+        <div class="show_right">
+            <div class="show_right1">
+                <form name="form1" id="form1" action="index.php">
+                    <input type="hidden" name="m" value="search"/>
+                    <input type="hidden" name="c" value="index"/>
+                    <input type="hidden" name="a" value="init"/>
+                    <input type="hidden" name="typeid" value="0" id="typeid"/>
+                    <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
+                    <input type="text" name="q" id="keywords" class="searchtext" >
+                    <input type="submit" id="post-search" class="searchsub" value="搜索">
+                </form>
+            </div>
+            <div class="show_right2">
+                <div class="right_title">民商管理数据库</div>
+                <ul class="right_cat">
+				{loop subcat($catid) $c}
+                	<li><a href="{$c['url']}">{$c['catname']}(<span style="color:red">{$c['items']}</span>件)</a></li>
+                {/loop}
+                </ul>
+            </div>
+            <div class="weixin">
+            <img src="{$CATEGORYS[97][image]}" />
+            </div>
+            <div class="show_right3">
+                <div class="right_title">最新法规</div>
+                <div class="right3_list">
+                    <ul>
+                    {pc:content action="lists" catid="73" order="listorder ASC,inputtime desc,id desc" num="10"}
+                    {loop $data $dv}
+                    <li><a href="{$dv['url']}">{str_cut($dv['title'],47)}</a></li>
+                    {/loop}
+                    {/pc}
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{template "content","footer"}

@@ -1,0 +1,50 @@
+﻿<script language="javascript" type="text/javascript">
+var URLParams = new Object() ;
+var aParams = document.location.search.substr(1).split('&') ;
+for (i=0 ; i < aParams.length ; i++) {
+	var aParam = aParams[i].split('=') ;
+	URLParams[aParam[0]] = aParam[1] ;
+}
+var mode = URLParams["mode"];
+var url  = URLParams["url"];
+var strplayer = "";
+if ("wmp"==mode)
+{
+	strplayer += '<div style="float:left;">';
+	strplayer += '<object id="MediaPlayer" name="MediaPlayer" width="400" height="350" classid="CLSID:6BF52A52-394A-11d3-B153-00C04F79FAA6" type="application/x-oleobject">';
+	strplayer += '<param name="url" value="' + url + '">';
+	strplayer += '<param name="AutoStart" value="1">';
+	strplayer += '<param NAME="PlayCount" value="1000">';
+	strplayer += '<param name="AllowScan" value="1">';
+	strplayer += '<param name="EnableContextMenu" value="1">';
+	strplayer += '<param name="WindowlessVideo" value="T">';
+	strplayer += '<embed name="MediaPlayer_embed" id="MediaPlayer_embed" pluginspage="http://www.microsoft.com/windows/windowsmedia/download/" type="application/x-mplayer2" src="' + url + '" width="400" height="350" autostart="1" allowscan="1" enablecontextmenu="1" loop="-1">';
+	strplayer += '</embed>';
+	strplayer += '</object></div>';
+}
+else if ("real"==mode)
+{
+	strplayer += '<div style="float:left;">';
+	strplayer += '<object id="RealPlayer" name="RealPlayer" width="400" height="300" classid="CLSID:CFCDAA03-8BE4-11CF-B84B-0020AFBBCCFA" type="application/x-oleobject">';
+	strplayer += '<param name="src" value="' + url + '">';
+	strplayer += '<param name="controls" value="IMAGEWINDOW">';
+	strplayer += '<param name="AutoStart" value="1">';
+	strplayer += '<param name="Loop" value="-1">';
+	strplayer += '<param name="console" value="Clip1">';
+	strplayer += '<EMBED src="' + url + '" width="400" height="300" type=audio/x-pn-realaudio-plugin console="Clip1" controls="IMAGEWINDOW" autostart="true" loop="-1"></EMBED></object><br>';
+	strplayer += '<object id="RealPlayerC" name="RealPlayer" width="400" height="50" classid="CLSID:CFCDAA03-8BE4-11CF-B84B-0020AFBBCCFA" type="application/x-oleobject">';
+	strplayer += '<param name="controls" value="StatusBar,ControlPanel">';
+	strplayer += '<param name="console" value="Clip1">';
+	strplayer += '<EMBED width=400 height=50 type=audio/x-pn-realaudio-plugin console="Clip1"></EMBED></object>';
+	strplayer += '</div>';
+}
+document.write ("<HTML>");
+document.write ("<HEAD>");
+document.write('<title>媒体文件预览</title>');
+document.write ("<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>");
+document.write ("</HEAD>");
+document.write ("<BODY leftmargin=0 topmargin=0>");
+document.write (strplayer);
+document.write ("</BODY>");
+document.write ("</HTML>");
+</script>

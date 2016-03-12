@@ -1,0 +1,41 @@
+<body>
+<!--头部导航开始-->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{:U('Index/index')}"><img src="{$Think.const.ADMIN_IMG_URL}admin_top_logo.png"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              <li ><a href="{:U('index/index')}">首页</a></li>
+              <li ><a href="{:U('Manager/index')}">用户</a></li>
+              <li ><a href="{:U('Periods/index')}">题库管理</a></li>
+              <li><a href="{:U('QuestionNaire/listArticle')}">个人中心</a></li>
+              <if condition="$Think.session.status_id eq 'Family'">
+                  <li><a href="{:U('FamilyStatic/index')}">统计中心</a></li>
+              <elseif condition="($Think.session.status_id eq 'ClassA') OR ($Think.session.status_id eq 'Teacher')"/>
+                  <li><a href="{:U('ClassStatic/index')}">统计中心</a></li>
+              <elseif condition="$Think.session.status_id eq 'Grade'"/>
+                  <li><a href="{:U('GradeStatic/index')}">统计中心</a></li>
+              <elseif condition="$Think.session.status_id eq 'Garden'"/>
+                  <li><a href="{:U('GardenStatic/index')}">统计中心</a></li>
+              <elseif condition="$Think.session.status_id eq 'super_admin'"/>
+                  <li><a href="{:U('GsStatic/index')}">统计中心</a></li>
+              </if>
+
+       	  </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <!--  <li><a href=""><i class="glyphicon glyphicon-home"></i> 回首页</a></li> -->
+              <li><a href="{:U('Admin/'.$_SESSION['controller'],array('id'=>$_SESSION['user_id']),'')}"><i class="glyphicon glyphicon-user"></i> {$_SESSION['username']}</a></li>
+              <li><a href="{:U('Login/logout')}"><i class="glyphicon glyphicon-off"></i> 退出</a></li>
+          </ul>
+        </div>
+    </div>
+</div>
+<!--头部导航结束-->
+</body>
