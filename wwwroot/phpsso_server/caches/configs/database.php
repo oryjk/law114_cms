@@ -2,7 +2,7 @@
 return array (
 	'default' => array (
 		'hostname' => 'localhost',
-		'database' => 'pc114',
+		'database' => 'law114',
 		'username' => 'root',
 		'password' => 'oryjkln123',
 		'tablepre' => 'phpcms_sso_',
