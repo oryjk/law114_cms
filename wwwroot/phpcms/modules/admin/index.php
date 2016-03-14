@@ -30,8 +30,6 @@ class index extends admin {
 			//不为口令卡验证
 			if (!isset($_GET['card'])) {
 				$username = isset($_POST['username']) ? trim($_POST['username']) : showmessage(L('nameerror'),HTTP_REFERER);
-				$code = isset($_POST['code']) && trim($_POST['code']) ? trim($_POST['code']) : showmessage(L('input_code'), HTTP_REFERER);
-
 			} else { //口令卡验证
 				if (!isset($_SESSION['card_verif']) || $_SESSION['card_verif'] != 1) {
 					showmessage(L('your_password_card_is_not_validate'), '?m=admin&c=index&a=public_card');
@@ -45,27 +43,13 @@ class index extends admin {
 			$maxloginfailedtimes = getcache('common','commons');
 			$maxloginfailedtimes = (int)$maxloginfailedtimes['maxloginfailedtimes'];
 
-			if($rtime['times'] >= $maxloginfailedtimes) {
-				$minute = 60-floor((SYS_TIME-$rtime['logintime'])/60);
-				showmessage(L('wait_1_hour',array('minute'=>$minute)));
-			}
+
 			//查询帐号
 			$r = $this->db->get_one(array('username'=>$username));
 			if(!$r) showmessage(L('user_not_exist'),'?m=admin&c=index&a=login');
 			$password = md5(md5(trim((!isset($_GET['card']) ? $_POST['password'] : $_SESSION['card_password']))).$r['encrypt']);
 			
-			if($r['password'] != $password) {
-				$ip = ip();
-				if($rtime && $rtime['times'] < $maxloginfailedtimes) {
-					$times = $maxloginfailedtimes-intval($rtime['times']);
-					$this->times_db->update(array('ip'=>$ip,'isadmin'=>1,'times'=>'+=1'),array('username'=>$username));
-				} else {
-					$this->times_db->delete(array('username'=>$username,'isadmin'=>1));
-					$this->times_db->insert(array('username'=>$username,'ip'=>$ip,'isadmin'=>1,'logintime'=>SYS_TIME,'times'=>1));
-					$times = $maxloginfailedtimes;
-				}
-				showmessage(L('password_error',array('times'=>$times)),'?m=admin&c=index&a=login',3000);
-			}
+
 			$this->times_db->delete(array('username'=>$username));
 			
 			//查看是否使用口令卡
