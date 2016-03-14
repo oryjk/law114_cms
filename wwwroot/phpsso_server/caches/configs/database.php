@@ -4,7 +4,7 @@ return array (
 		'hostname' => 'localhost',
 		'database' => 'pc114',
 		'username' => 'root',
-		'password' => '',
+		'password' => 'oryjkln123',
 		'tablepre' => 'phpcms_sso_',
 		'charset' => 'utf8',
 		'type' => 'mysql',
