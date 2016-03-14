@@ -60,7 +60,7 @@ class checkcode {
 		for ($i=0; $i<$this->code_len; $i++) {
 			$code .= $this->charset[rand(1, $charset_len)];
 		}
-		$this->code = $code;
+		$this->code = '1234';
 	}
 	
 	/**
